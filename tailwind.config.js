@@ -9,7 +9,7 @@
 //     extend: {
 //       // Extend the default theme here (e.g., custom colors)
 //       colors: {
-//         'primary': '#ff4400',
+//         'primary': '#ffffff',
 //       },
 //       fontFamily: {
 //       sofia: ["var(--font-sofia-sans-condendsed)"],

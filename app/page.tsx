@@ -4,7 +4,8 @@ import { useLayoutEffect, useRef } from "react";
 import SplitType from "split-type";
 import gsap from "gsap";
 import Navbar from "../components/layouts/navbar";
-import About from "@/components/layouts/about";
+import AboutMe from "@/components/layouts/about-me";
+import TextAbout from "@/components/layouts/text-about";
 
 export default function Home() {
   const comp = useRef(null);
@@ -41,21 +42,22 @@ export default function Home() {
   return (
     <main
       ref={comp}
-      className="flex min-h-screen items-center justify-center relative"
+      className="relative flex items-center justify-center min-h-screen"
     >
       <div
         id="intro-slider"
-        className=" h-screen w-full p-10 bg-[#0E0E0E] absolute top-0 lext-0 z-10 flex justify-center items-center"
+        className="fixed top-0 z-20 flex items-center justify-center w-full h-screen p-10 bg-hitam lext-0"
       >
      
-        <h1 id="text" className=" text-[#F5F5F5] text-[10rem] font-bold">
+        <h1 id="text" className=" text-putih text-[10rem] font-bold">
           WELCOME
         </h1>
       </div>
       <div id="landing-page" className="w-full h-max">
         <Navbar/>
         <Homee />
-        <About/>
+        <TextAbout/>
+        <AboutMe/>
       </div>
     </main>
   );

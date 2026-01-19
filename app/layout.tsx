@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import ScrollSmooth from "../components/fragments/scroll-smooth"
 // import { fontSofia, fontSpace } from "@/lib/fonts";
 
 
@@ -18,7 +19,9 @@ export default function RootLayout({
       <body
         className={` antialiased`}
       >
+        <ScrollSmooth>
         {children}
+        </ScrollSmooth>
       </body>
     </html>
   );

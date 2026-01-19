@@ -49,14 +49,14 @@ function Home() {
 
 
   return (
-    <main className="w-full h-screen flex flex-col">
+    <main className="flex flex-col w-full h-screen bg-putih text-hitam">
       
       <div className="flex justify-center items-center pt-20 w-full h-[90vh]">
 
-        <div className="relative flex ml-20 mb-55 w-full h-">
+        <div className="relative flex w-full ml-20 mb-55 h-">
           <div className="flex gap-1 w-max h-max">
-            <div className="h-14 pt-1">
-              <div className="w-4 h-4  bg-blue-300 rounded-full"> </div>
+            <div className="pt-1 h-14">
+              <div className="w-4 h-4 bg-blue-300 rounded-full"> </div>
             </div>
             <p className="w-32 h-14"> {time.toLocaleTimeString("id-ID", {
               hour: "2-digit",
@@ -65,8 +65,8 @@ function Home() {
           </div>
         </div>
 
-        <div className="absolute flex justify-center items-center overflow-hidden">
-          <h1 id="heading" className="px-3 tracking-tighter font-extrabold text-[14rem]">
+        <div className="absolute flex items-center justify-center overflow-hidden">
+          <h1 id="heading" className="px-3 tracking-tighter font-extrabold text-[14rem] text-black  mix-blend-differenc">
             WEBDEVELOPER
           </h1>
         </div>
@@ -76,9 +76,9 @@ function Home() {
         </div>
       </div>
 
-      <div className="w-full justify-between px-8 flex items-end font-bold">
-        <h1 className="whitespace-pre italic text-2xl">{"{    WEB DESIGN (UI/UX)    }"}</h1>
-        <h1 className="whitespace-pre italic text-2xl">{"{    WEB DEVELOPMENT    }"}</h1>
+      <div className="flex items-end justify-between w-full px-8 font-bold">
+        <h1 className="text-2xl italic whitespace-pre">{"{    WEB DESIGN (UI/UX)    }"}</h1>
+        <h1 className="text-2xl italic whitespace-pre">{"{    WEB DEVELOPMENT    }"}</h1>
       </div>
 
     </main>

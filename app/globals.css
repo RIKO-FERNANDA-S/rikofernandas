@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+@theme {
+    --color-putih: #F5F5F5 ;
+    --color-hitam: #0E0E0E ;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     color: #0E0E0E;
 }

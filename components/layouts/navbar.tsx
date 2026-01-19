@@ -3,8 +3,8 @@ import { ArrowUpLeft, ArrowUpRight, ChevronDown } from 'lucide-react'
 
 function Navbar() {
   return (
-    <nav className='fixed w-full h-max p-10 flex justify-between items-center'>
-        <h1 className='w-35 text-2xl font-black tracking-tighter leading-5'>RIKO FERNANDA SAPUTRA</h1>
+    <nav className='fixed z-10 flex items-center justify-between w-full p-10 text-putih bg-transparant h-max mix-blend-difference'>
+        <h1 className='text-2xl font-black leading-5 tracking-tight w-35 '>RIKO FERNANDA SAPUTRA</h1>
         <div className='flex gap-8 font-medium'>
           <p className='flex gap-5'>{"["}<span>ABOUT</span>{"]"}</p>
           <p className='flex gap-5'>{"["}<span>PROJECT</span>{"]"}</p>

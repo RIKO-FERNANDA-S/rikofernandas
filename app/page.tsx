@@ -3,6 +3,8 @@ import Homee from "@/components/layouts/home";
 import { useLayoutEffect, useRef } from "react";
 import SplitType from "split-type";
 import gsap from "gsap";
+import Navbar from "../components/layouts/navbar";
+import About from "@/components/layouts/about";
 
 export default function Home() {
   const comp = useRef(null);
@@ -24,8 +26,7 @@ export default function Home() {
         }).to(myText.chars,{
           opacity: 0,
           delay: 0.3,
-          y: "+=30",
-          stagger: 0.3,
+         
         })
         .to("#intro-slider", {
           yPercent: "-100",
@@ -52,7 +53,9 @@ export default function Home() {
         </h1>
       </div>
       <div id="landing-page" className="w-full h-max">
+        <Navbar/>
         <Homee />
+        <About/>
       </div>
     </main>
   );

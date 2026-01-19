@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+body {
+    color: #0E0E0E;
+}
 
 p{
     font-family: 'Space Grotesk', sans-serif;

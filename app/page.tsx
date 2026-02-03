@@ -6,6 +6,7 @@ import gsap from "gsap";
 import Navbar from "../components/layouts/navbar";
 import AboutMe from "@/components/layouts/about-me";
 import TextAbout from "@/components/layouts/text-about";
+import Project from "@/components/layouts/project";
 
 export default function Home() {
   const comp = useRef(null);
@@ -58,6 +59,7 @@ export default function Home() {
         <Homee />
         <TextAbout/>
         <AboutMe/>
+        <Project/>
       </div>
     </main>
   );

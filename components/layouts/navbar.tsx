@@ -7,8 +7,8 @@ function Navbar() {
         <h1 className='text-2xl font-black leading-5 tracking-tight w-35 '>RIKO FERNANDA SAPUTRA</h1>
         <div className='flex gap-8 font-medium'>
           <p className='flex gap-5'>{"["}<span>ABOUT</span>{"]"}</p>
-          <p className='flex gap-5'>{"["}<span>PROJECT</span>{"]"}</p>
-          <p className='flex gap-5'>{"["}<span>SERVICE</span>{"]"}</p>
+          <p className='flex gap-5'>{"["}<span>PROJECTS</span>{"]"}</p>
+          <p className='flex gap-5'>{"["}<span>ACIEVEMENTS</span>{"]"}</p>
           <p className='flex gap-5'>{"["}<span>CONNECT</span>{"]"}</p>
         </div>
 

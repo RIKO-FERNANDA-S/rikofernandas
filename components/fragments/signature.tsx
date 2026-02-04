@@ -18,8 +18,8 @@ function Signature() {
             defaults: {duration: 1, ease: "power1.inOut"},
             scrollTrigger: {
                 trigger: svgRef.current,
-                start: "top 70%",
-                end: "bottom 40%",
+                start: "top 80%",
+                end: "bottom 70%",
                 scrub: 2
             }
         })

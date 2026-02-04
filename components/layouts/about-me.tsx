@@ -20,7 +20,7 @@ function aboutMe() {
           </h1>
         </div>
         <div className="w-max flex flex-col h-max gap-3 ">
-          <Image src={Gambar} alt="gambar1" className="w-auto h-120" />
+          <Image src={Gambar} alt="gambar1" className="w-auto h-120 grayscale-75" />
           <div className="flex flex-col text-putih justify-center items-center">
             <p>HELLO WORLD</p>
             <p>I'M RIKO FERNANDA SAPUTRA</p>

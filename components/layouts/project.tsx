@@ -7,10 +7,10 @@ import Link from "next/link";
 function Project() {
   const cards = [
 
-    { id: 1, title: "Validnesia", img: "/image/validnesia.png" },
-    { id: 2, title: "PT. Ultrajaya", img: "/image/pt-ultrajaya.png" },
-    { id: 3, title: "Bathari", img: "/image/bathari.png" },
-    { id: 4, title: "Pocari Sweat", img: "/image/pocari.png" },
+    { id: 1, title: "Validnesia", img: "/image/validnesia.png", link: "/", describe:"Social Media App" },
+    { id: 2, title: "PT. Ultrajaya", img: "/image/pt-ultrajaya.png", link: "/", describe:"Fuctional clone of" },
+    { id: 3, title: "Bathari", img: "/image/bathari.png", link: "/", describe:"E-commerce Website" },
+    { id: 4, title: "Pocari Sweat", img: "/image/pocari.png", link: "/", describe:"Functional Website" },
   ];
 
   return (
@@ -40,6 +40,7 @@ function Project() {
               initial={{ filter: "grayscale(100%)" }}
               transition={{ duration: 0.5 }}
             >
+              <Link href={card.link}>
               <Image
                 src={card.img}
                 alt={card.title}
@@ -48,20 +49,28 @@ function Project() {
                 className="object-cover transition-transform duration-700 hover:scale-110"
                 priority={card.id === 1}
               />
+              </Link>
             </motion.div>
 
             
-            <div className="absolute inset-0 z-10 flex items-end justify-center p-6 pointer-events-none">
-              <motion.h1
-                className="text-white font-bold uppercase text-2xl drop-shadow-md"
-                initial={{ opacity: 0, y: 20 }}
+            <div className="absolute inset-x-0 bottom-0 z-10 flex items-center justify-center pointer-events-none ">
+              
+              <motion.div
+                className=" text-putih flex py-10 leading-1 flex-col items-center justify-center text-center w-full h-40 bg-linear-to-t from-hitam/80 from-7% to-transparent to-95%% "
+                initial={{ opacity: 0, y: 10, animationDelay: 0  }}
                 variants={{
-                  hover: { opacity: 1, y: -10 },
+                  hover: { opacity: 1, y: 0 },
                 }}
                 transition={{ duration: 0.4, ease: "easeOut" }}
               >
+                <p
+               className="tracking-tighter drop-shadow-md ">
+                {card.describe}
+              </p>
+                <h1 className="wrap-break-word font-bold uppercase text-6xl tracking-tighter drop-shadow-md">
                 {card.title}
-              </motion.h1>
+                </h1>
+              </motion.div>
             </div>
           </motion.div>
         ))}

@@ -10,7 +10,7 @@ function Project() {
     { id: 1, title: "Validnesia", img: "/image/validnesia.png", link: "/", describe:"Social Media App" },
     { id: 2, title: "PT. Ultrajaya", img: "/image/pt-ultrajaya.png", link: "/", describe:"Fuctional clone of" },
     { id: 3, title: "Bathari", img: "/image/bathari.png", link: "/", describe:"E-commerce Website" },
-    { id: 4, title: "Pocari Sweat", img: "/image/pocari.png", link: "/", describe:"" },
+    { id: 4, title: "Pocari Sweat", img: "/image/pocari.png", link: "/", describe:"Fuctional clone of" },
   ];
 
   return (
